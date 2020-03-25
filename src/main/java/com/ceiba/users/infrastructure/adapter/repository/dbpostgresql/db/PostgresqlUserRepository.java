@@ -20,15 +20,14 @@ public class PostgresqlUserRepository implements UserRepository{
 
 	@Override
 	public User findUserByDni(Long dni) {
-		return JpaUserMapper.toUser(jpaUserRepository.findById(dni).orElse(null));
+		return JpaUserMapper.toUser(jpaUserRepository.getOne(dni));
 	}
 
 	@Override
 	public void updateAmountMoviesUser(Long dni) {
-		JpaUser user = jpaUserRepository.findById(dni).orElse(null);
-		user.setDni(user.getDni()+1L);
+		JpaUser user = jpaUserRepository.getOne(dni);
+		user.setAmountMovies(user.getAmountMovies() + 1);
 		jpaUserRepository.save(user);
-		
 	}
 	
 	

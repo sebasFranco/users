@@ -21,17 +21,39 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
-	<classpathentry kind="lib" path="C:/Users/samir.raduam/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.2.5.RELEASE/d2310c79bebfbc6d66ddeefda102b229d8ae7010/spring-data-jpa-2.2.5.RELEASE.jar" sourcepath="C:/Users/samir.raduam/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.2.5.RELEASE/ee8420d49182b5ec7068856b54953f22f28fa254/spring-data-jpa-2.2.5.RELEASE-sources.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/samir.raduam/.m2/repository/org/springframework/data/spring-data-jpa/2.1.5.RELEASE/spring-data-jpa-2.1.5.RELEASE.jar" sourcepath="C:/Users/samir.raduam/.m2/repository/org/springframework/data/spring-data-jpa/2.1.5.RELEASE/spring-data-jpa-2.1.5.RELEASE-sources.jar">
+	<classpathentry kind="lib" path="C:/Users/juan.franco/.m2/repository/org/springframework/amqp/spring-rabbit/2.1.4.RELEASE/spring-rabbit-2.1.4.RELEASE.jar" sourcepath="C:/Users/juan.franco/.m2/repository/org/springframework/amqp/spring-rabbit/2.1.4.RELEASE/spring-rabbit-2.1.4.RELEASE-sources.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.springframework.data"/>
-			<attribute name="maven.artifactId" value="spring-data-jpa"/>
-			<attribute name="maven.version" value="2.1.5.RELEASE"/>
+			<attribute name="maven.groupId" value="org.springframework.amqp"/>
+			<attribute name="maven.artifactId" value="spring-rabbit"/>
+			<attribute name="maven.version" value="2.1.4.RELEASE"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/juan.franco/.m2/repository/org/springframework/amqp/spring-amqp/2.1.4.RELEASE/spring-amqp-2.1.4.RELEASE.jar" sourcepath="C:/Users/juan.franco/.m2/repository/org/springframework/amqp/spring-amqp/2.1.4.RELEASE/spring-amqp-2.1.4.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.springframework.amqp"/>
+			<attribute name="maven.artifactId" value="spring-amqp"/>
+			<attribute name="maven.version" value="2.1.4.RELEASE"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/juan.franco/.m2/repository/org/springframework/spring-messaging/5.1.5.RELEASE/spring-messaging-5.1.5.RELEASE.jar" sourcepath="C:/Users/juan.franco/.m2/repository/org/springframework/spring-messaging/5.1.5.RELEASE/spring-messaging-5.1.5.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.springframework"/>
+			<attribute name="maven.artifactId" value="spring-messaging"/>
+			<attribute name="maven.version" value="5.1.5.RELEASE"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/juan.franco/.m2/repository/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3.jar" sourcepath="C:/Users/juan.franco/.m2/repository/com/rabbitmq/amqp-client/5.4.3/amqp-client-5.4.3-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.rabbitmq"/>
+			<attribute name="maven.artifactId" value="amqp-client"/>
+			<attribute name="maven.version" value="5.4.3"/>
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>

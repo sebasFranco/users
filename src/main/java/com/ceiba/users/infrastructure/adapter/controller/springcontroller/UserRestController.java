@@ -1,5 +1,6 @@
 package com.ceiba.users.infrastructure.adapter.controller.springcontroller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -11,24 +12,18 @@ import com.ceiba.users.application.caseuse.UpdateAmountMoviesUser;
 import com.ceiba.users.domain.model.User;
 
 @RestController
-@RequestMapping("user")
+@RequestMapping("/user")
 public class UserRestController {
 	
+	@Autowired
 	private FindUserByDni findUserByDni;
-	private UpdateAmountMoviesUser updateAmountMoviesUser;
 	
-	public UserRestController(FindUserByDni findUserByDni, UpdateAmountMoviesUser updateAmountMoviesUser) {
+	public UserRestController(FindUserByDni findUserByDni) {
 		this.findUserByDni = findUserByDni;
-		this.updateAmountMoviesUser = updateAmountMoviesUser;
 	}
 	
-	@GetMapping("{id}")
+	@GetMapping("/{id}")
 	public User findByDni(@PathVariable Long id) {
 		return findUserByDni.findUserByDni(id);
-	}
-	
-	@PutMapping("{id}")
-	public void updateUser(@PathVariable Long id) {
-		updateAmountMoviesUser.updateAmountMoviesUser(id);
 	}
 }
